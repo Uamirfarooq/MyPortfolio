@@ -52,7 +52,7 @@ const Experience = () => {
       developing new tools for data analysis and visualization."
       />
       <Details 
-      position="Software Engineer" company="Google"
+      position="Software Engineer" company="netflix"
       companyLink="www.google.com"
       time="2022-Present"  address="Mountain View, CA"
       work="Worked on a team responsible for developing new features for Google's 
