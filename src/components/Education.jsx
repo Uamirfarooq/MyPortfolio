@@ -34,15 +34,15 @@ const Education = () => {
   });
   return (
     <div className=" py-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center">
-        Experience
+      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl md:mt-32 md:mb-16">
+        Education
       </h2>
-      <div ref={ref} className=" w-[75%] mx-auto relative ">
+      <div ref={ref} className=" w-[75%] mx-auto relative lg:w-[90%] md:w-full">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className=" absolute left-9 top-8 w-[4px] h-full bg-dark origin-top"
+          className="dark:bg-light absolute left-9 top-8 w-[4px] h-full bg-dark origin-top md:w[2px] md:left-[30px] xs:left-[20px]"
         />
-        <ul className="w-full flex items-center justify-between flex-col ml-4">
+        <ul className="w-full flex items-center justify-between flex-col ml-4 xs:ml-2">
           <Details
             type="Bachelor Of Science In Computer Science"
             time="2016-2020"
@@ -54,7 +54,7 @@ const Education = () => {
           <Details
             type="Bachelor Of Science In Computer Science"
             time="2016-2020"
-            place="2022-Present"
+            place="2022-Present" 
             address="Massachusetts Institute Of Technology (MIT)"
             work="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
       Intelligence."

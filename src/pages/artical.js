@@ -40,8 +40,8 @@ const MovingImg = ({ title, img, link }) => {
       <h2 className=' capitalize text-xl font-semibold hover:underline'>{title}</h2>
       <FramerImage
         style={{ x: x, y: y }}
-        initial={{opacity:0}}
-        whileInView={{opacity:1, transition:{duration:0.2, ease:"easeInOut"}}}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, transition: { duration: 0.2, ease: "easeInOut" } }}
         ref={imgRef} src={img} alt={title} className='z-10 w-96 h-auto hidden absolute rounded-lg ' />
     </Link>
   )
@@ -50,13 +50,13 @@ const MovingImg = ({ title, img, link }) => {
 
 const Article = ({ img, title, date, link }) => {
   return (
-    <motion.li className=' relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 '
-    initial={{y:200}}
-    whileInView={{y:0}}
+    <motion.li className=' relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:text-light dark:bg-dark'
+      initial={{ y: 200 }}
+      whileInView={{ y: 0 }}
     // viewport={{once:true}}
     >
       <MovingImg title={title} img={img} link={link} />
-      <span className=' text-primary font-semibold pl-4'>{date}</span>
+      <span className=' text-primary dark:text-primaryDark font-semibold pl-4'>{date}</span>
     </motion.li>
   )
 }
@@ -64,10 +64,11 @@ const Article = ({ img, title, date, link }) => {
 
 const FeaturedArticale = ({ title, summary, img, link, time }) => {
   return (
-    <li className=' col-span-1 relative w-full p-4 bg-light border border-dark border-solid rounded-2xl'>
-      <div className=" absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
+    <li className='dark:text-light dark:bg-dark col-span-1 relative w-full p-4 bg-light border border-dark dark:border-light border-solid rounded-2xl'>
+      <div className=" absolute top-0 -right-3 -z-10 w-[101%] h-[104%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light" />
       <Link className=' w-full   cursor-pointer overflow-hidden rounded-lg ' href={link} target='_blank'>
-        <FramerImage whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }} src={img} alt={title} className='w-full h-auto rounded-lg' />
+        <FramerImage priority
+          sizes='(max-width:768px) 100vw,(max-width:1200px) 50vw,50vw' whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }} src={img} alt={title} className='w-full h-auto rounded-lg' />
 
       </Link>
       <Link href={link} target='_blank'>
@@ -88,14 +89,14 @@ const artical = () => {
         <title>Umair | Articals page</title>
         <meta name="description" content="any description" />
       </Head>
-      <main className=' w-full mb-16 flex flex-col items-center justify-center overflow-hidden'>
+      <main className='dark:text-light w-full mb-16 flex flex-col items-center justify-center overflow-hidden'>
         <Layout className='pt-16'>
           <AnimatedText text="Words Can Change The World!" className='mb-16' />
           <ul className=' grid grid-cols-2 gap-16'>
             <FeaturedArticale
               title="Build A Custom Pagination Component In Reactjs From Scratch"
               summary=" Learn how to build a custom pagination component in ReactJS from scratch. 
-       Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
+                        Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
               time="9 min read"
               link="/"
               img={article1}
@@ -103,13 +104,13 @@ const artical = () => {
             <FeaturedArticale
               title="Build A Custom Pagination Component In Reactjs From Scratch"
               summary=" Learn how to build a custom pagination component in ReactJS from scratch. 
-       Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
+                        Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
               time="9 min read"
               link="/"
               img={article2}
             />
           </ul>
-          <h2 className=' font-bold text-4xl w-full text-center my-16 mt-32'>All Articels</h2>
+          <h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>All Articels</h2>
 
         </Layout>
         <ul className='mb-60'>
@@ -204,11 +205,11 @@ const artical = () => {
             link="/"
             img={article5}
           />
-          
-          
+
+
 
         </ul>
-        
+
       </main>
     </>
   )
