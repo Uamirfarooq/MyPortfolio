@@ -16,11 +16,11 @@ const Details = ({ time, type, place, info }) => {
         transition={{ duration: 0.5, type: "spring" }}
         className=" capitalize font-bold text-2xl"
       >
-        <h3>{type}</h3>
-        <span className=" capitalize font-medium text-dark/75">
+        <h3 className=" capitalize font-bold text-2xl sm:text-xl xs:text-lg">{type}</h3>
+        <span className=" capitalize font-medium text-dark/75 xs:text-sm">
           {time} | {place}
         </span>
-        <p className="font-medium w-full">{info}</p>
+        <p className="font-medium w-full md:text-sm">{info}</p>
       </motion.div>
     </li>
   );
