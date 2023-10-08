@@ -42,9 +42,9 @@ const Experience = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <div className=" py-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl md:mb-16 xs:text-4xl">
-        Experience
+    <div className=" py-64 sm:py-16 xs:py-8 md:py-32">
+      <h2 className="font-bold text-8xl mb-32 sm:mb-8 xs:mb-4 md:mb-16 w-full text-center md:text-6xl xs:text-4xl">
+        Experience (Dummy Data)
       </h2>
       <div ref={ref} className=" w-[75%] mx-auto relative lg:w-[90%] md:w-full">
         <motion.div

@@ -138,21 +138,21 @@ const Navbar = () => {
           </nav>
 
           <nav className=" flex items-center justify-center flex-wrap ">
-            <motion.a href="https://twitter.com" target="_blank"
+            <motion.a href="https://twitter.com/MrUmair8473076" target="_blank"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               className="w-6 mr-2"
             >
               <TwitterIcon />
             </motion.a>
-            <motion.a href="https://github.com" target="_blank"
+            <motion.a href="https://github.com/Uamirfarooq" target="_blank"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
 
               className="w-6 mx-2">
               <GithubIcon />
             </motion.a>
-            <motion.a href="https://linkedin.com" target="_blank"
+            <motion.a href="https://www.linkedin.com/in/umair-farooq-599303260/" target="_blank"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
 
@@ -188,15 +188,11 @@ const Navbar = () => {
         </div>
 
 
-        <div className=" absolute left-[50%] top-2 translate-x-[50%]">
+        <div className=" absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2  z-20">
           <Logo />
         </div>
 
       </header>
-
-      {/* <div className="h-[1px] mx-32 w-80% -bottom-0.5 bg-dark">
-      &nbsp;
-    </div> */}
     </>
 
   );

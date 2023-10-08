@@ -5,7 +5,13 @@ import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import Image from 'next/image';
 import { GithubIcon } from '@/components/Icons';
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
+import project2 from "../../public/images/projects/React + Node js.png"
+import project3 from "../../public/images/projects/External.jpg"
+import project4 from "../../public/images/projects/Internal APIs.jpg"
+import project5 from "../../public/images/projects/tea2.png"
+import project6 from "../../public/images/projects/tea1.png"
+import project1 from "../../public/images/projects/tea.png"
+
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect';
 
@@ -41,7 +47,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
     </article>
   )
 }
-const Projext = ({ type, title, img, link, github }) => {
+const Projext = ({ type, title, img, link, github,summary }) => {
   return (
     <article className=' w-full flex flex-col items-center justify-between rounded-2xl border dark:bg-dark border-solid border-dark bg-light p-6 relative dark:border-light xs:p-4'>
       <div className=" absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem] bg-dark rounded-br-3xl dark:bg-light" />
@@ -54,6 +60,7 @@ const Projext = ({ type, title, img, link, github }) => {
         <Link href={link} target='_blank' className=' hover:underline underline-offset-2'>
           <h2 className=' my-2 w-full text-left text-3xl dark:text-light  font-bold lg:text-2xl md:text-xl'>{title}</h2>
         </Link>
+        <p className=' dark:text-light my-2 font-medium text-dark sm:text-sm'>{summary}</p>
         
         <div className=' w-full mt-2 flex  items-center justify-between'>
         <Link href={link}
@@ -88,70 +95,58 @@ const projects = () => {
           <div className=' grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
             <div className=' col-span-12'>
               <FeaturedProject
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-              It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-              local currency."
-                link="/"
+                title="An Application using Internal & External API"
+                summary="Revolutionize web development with our cutting-edge application built on React.js, MongoDB, and JWT tokens. Seamlessly integrating internal and external APIs, our app delivers unparalleled performance and functionality. Experience a dynamic user interface, real-time data updates, and robust security protocols. Elevate your digital experience with the power of synergy"
+                link="https://github.com/Uamirfarooq/coin-bounce-main.git"
                 type="Featured Project"
-                img={project1}
-                github="/"
+                img={project2}
+                github="https://github.com/Uamirfarooq/coin-bounce-main.git"
               />
             </div><div className=' col-span-6 sm:col-span-12 '>
             <Projext
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-              It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-              local currency."
-                link="/"
+                title="Routes using External Apis"
+                summary="Explore the world through our website's dual routes. Stay informed with the latest news articles, powered by external APIs, and track global currencies effortlessly for a comprehensive online experience."
+                link="https://github.com/Uamirfarooq/coin-bounce-main.git"
                 type="Featured Project"
-                img={project1}
-                github="/"
+                img={project3}
+                github="https://github.com/Uamirfarooq/coin-bounce-main.git"
               />
             </div><div className=' col-span-6 sm:col-span-12'>
               <Projext
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-              It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-              local currency."
-                link="/"
+                title="Routes using Internal Apis"
+                summary="Unlock personalized experiences on our website with internal APIs, user authentication, JWT tokens, and MongoDB. Securely access exclusive content, manage your profile, and enjoy a tailored online journey."
+                link="https://github.com/Uamirfarooq/coin-bounce-main.git"
                 type="Featured Project"
-                img={project1}
-                github="/"
+                img={project4}
+                github="https://github.com/Uamirfarooq/coin-bounce-main.git"
               />
             </div>
             <div className=' col-span-12'>
             <FeaturedProject
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-              It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-              local currency."
-                link="/"
+                title="A Tea Resturant Project"
+                summary="Sip into serenity at our Tea Restaurant Project website, where simplicity meets sophistication. Experience an elegant blend of flavors and design with our simple HTML, CSS, and JavaScript interface. Immerse yourself in a tranquil tea exploration online."
+                link="https://github.com/Uamirfarooq/tea-project.git"
                 type="Featured Project"
                 img={project1}
-                github="/"
+                github="https://github.com/Uamirfarooq/tea-project.git"
               />
             </div><div className=' col-span-6 sm:col-span-12'>
               <Projext
                 title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-              It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-              local currency."
-                link="/"
+                summary="Sample Pages"
+                link="https://github.com/Uamirfarooq/tea-project.git"
                 type="Featured Project"
-                img={project1}
-                github="/"
+                img={project5}
+                github="https://github.com/Uamirfarooq/tea-project.git"
               />
             </div><div className=' col-span-6 sm:col-span-12' >
               <Projext
                 title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-              It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-              local currency."
-                link="/"
+                summary="Sample Pages"
+                link="https://github.com/Uamirfarooq/tea-project.git"
                 type="Featured Project"
-                img={project1}
-                github="/"
+                img={project6}
+                github="https://github.com/Uamirfarooq/tea-project.git"
               />
             </div>
 

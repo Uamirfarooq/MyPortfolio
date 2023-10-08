@@ -93,7 +93,7 @@ const artical = () => {
       <TransitionEffect />
       <main className='dark:text-light w-full mb-16 flex flex-col  items-center justify-center overflow-hidden'>
         <Layout className='pt-16'>
-          <AnimatedText text="Words Can Change The World!" className='mb-16 lg:!text-7xl sm:mb-8 sm:!tex6xl xs:!text-4xl' />
+          <AnimatedText text="Words Can Change The World!(Dummy Data)" className='mb-16 lg:!text-6xl sm:mb-8 sm:!tex6xl xs:!text-4xl' />
           <ul className=' grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8  md:gap-y-16 '>
             <FeaturedArticale
               title="Build A Custom Pagination Component In Reactjs From Scratch"
@@ -112,7 +112,7 @@ const artical = () => {
               img={article2}
             />
           </ul>
-          <h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>All Articels</h2>
+          <h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>Dummy Articels</h2>
 
         </Layout>
         <ul className='mb-60'>
@@ -142,71 +142,9 @@ const artical = () => {
             link="/"
             img={article4}
           />
-          <Article title="Form Validation In Reactjs: Build A Reusable Custom Hook For Iaaanputs And Error Handling"
-            date="Match 22, 2023"
-            link="/"
-            img={article4}
-          />
-          <Article title="Form Validation In Reactjs: Build A Reusable Custom Hook For Iaaanputs And Error Handling"
-            date="Match 22, 2023"
-            link="/"
-            img={article4}
-          />
-          <Article title="Form Validation In Reactjs: Build A Reusable Custom Hook For Iaaanputs And Error Handling"
-            date="Match 22, 2023"
-            link="/"
-            img={article4}
-          />
-          <Article title="Form Validation In Reactjs: Build A Reusable Custom Hook For Iaaanputs And Error Handling"
-            date="Match 22, 2023"
-            link="/"
-            img={article4}
-          />
-          <Article title="Form Validation In Reactjs: Build A Reusable Custom Hook For Iaaanputs And Error Handling"
-            date="Match 22, 2023"
-            link="/"
-            img={article4}
-          />
-          <Article title="Form Validation In Reactjs: Build A Reusable Custom Hook For Iaaanputs And Error Handling"
-            date="Match 22, 2023"
-            link="/"
-            img={article4}
-          />
-          <Article title="Form Validation In Reactjs: Build A Reusable Custom Hook For Iaaanputs And Error Handling"
-            date="Match 22, 2023"
-            link="/"
-            img={article4}
-          />
-          <Article title="Form Validation In Reactjs: Build A Reusable Custom Hook For Iaaanputs And Error Handling"
-            date="Match 22, 2023"
-            link="/"
-            img={article4}
-          />
-          <Article title="Form Validation In Reactjs: Build A Reusable Custom Hook For Indsfsdputs And Error Handling"
-            date="Match 22, 2023"
-            link="/"
-            img={article5}
-          />
-          <Article title="Form Validation In Reactjs: Build A Reusable Custom Hook For Indsfsdputs And Error Handling"
-            date="Match 22, 2023"
-            link="/"
-            img={article5}
-          />
-          <Article title="Form Validation In Reactjs: Build A Reusable Custom Hook For Indsfsdputs And Error Handling"
-            date="Match 22, 2023"
-            link="/"
-            img={article5}
-          />
-          <Article title="Form Validation In Reactjs: Build A Reusable Custom Hook For Indsfsdputs And Error Handling"
-            date="Match 22, 2023"
-            link="/"
-            img={article5}
-          />
-          <Article title="Form Validation In Reactjs: Build A Reusable Custom Hook For Indsfsdputs And Error Handling"
-            date="Match 22, 2023"
-            link="/"
-            img={article5}
-          />
+          
+          
+          
 
 
 
